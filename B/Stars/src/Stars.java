@@ -1,10 +1,20 @@
 public class Stars {
     public static void main(String[] args) {
-        lineOf13();
-        lineOf7();
-        lineOf35();
+//        lineOf13();
+//        lineOf7();
+        line(13);
+        line(7);
+        line(35);
+//        lineOf35();
         box10x3();
         box5x4();
+    }
+
+    public static void line(int count) {
+        for (int i = 1; i <= count; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
     }
 
     public static void lineOf13() {

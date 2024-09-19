@@ -1,5 +1,11 @@
 import java.awt.*;
 
+/**
+ * Class demonstrating use of the DrawingPanel object to generate scalable cars
+ *
+ * @author Larry Clement
+ * @version 5.0
+ */
 public class Car5 {
     public static void main(String[] args) {
         DrawingPanel panel = new DrawingPanel(260, 180);
@@ -15,12 +21,12 @@ public class Car5 {
     }
 
     /*
-    * Draws a car at the given x/y coordinates with the given width.
+    * Draws a car having a width of 100 pixels and a height of 50 pixels (half of the width)
+    * at the given x/y coordinates.
+    *
     * @param g the Graphics object to draw with
     * @param x the x coordinate of the top left corner of the car
     * @param y the y coordinate of the top left corner of the car
-    *
-    * The width of the car is 100 pixels and the height is 50 pixels.
      */
     public static void drawCar(Graphics g, int x, int y) {
         drawCar(g, x, y, 100);
@@ -28,10 +34,12 @@ public class Car5 {
 
     /*
      * Draws a car at the given x/y coordinates with the given width.
+     *
      * @param g the Graphics object to draw with
      * @param x the x coordinate of the top left corner of the car (in pixels)
      * @param y the y coordinate of the top left corner of the car (in pixels)
      * @param width the width of the car (in pixels).  The height is half the width.
+     *
      */
     public static void drawCar(Graphics g, int x, int y, int width) {
         g.setColor(Color.BLACK);
